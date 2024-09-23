@@ -115,7 +115,6 @@ class TagAnalyzer {
     this.analyzePageTags(tags);
     this.analyzeClassNames(classNames);
     await this.analyzeLinks(tags,classNames);
-
     this.createUI();
   }
 }
