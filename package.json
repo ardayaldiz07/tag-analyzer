@@ -1,6 +1,6 @@
 {
   "name": "tag-analyzer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Tag analyzer for your website",
   "main": "index.js",
   "module": "index.js",
