@@ -1,6 +1,10 @@
-Using Example
-Add this script to your html file.
+# Using Example
+
+
+
+# Add this script to your html file.
 <script type="module">
+  ```javascript
   import TagAnalyzer from './TagAnalyzer.js';
 
   document.addEventListener("DOMContentLoaded", () => {
