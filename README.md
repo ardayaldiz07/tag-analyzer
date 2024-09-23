@@ -14,3 +14,18 @@ You can install TagAnalyzer using NPM:
 
 ```bash
 npm install tag-analyzer
+```
+
+## Usage Example
+
+```html
+<script type="module">
+  import TagAnalyzer from './TagAnalyzer.js';
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const analyzer = new TagAnalyzer();
+    
+    // Example usage
+    analyzer.run(['h1', 'h2', 'h3'], ['header', 'arda']);
+  });
+</script>
