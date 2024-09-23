@@ -1,0 +1,1 @@
+export {default as TagAnalyzer, default} from './src/TagAnalyzer.js';

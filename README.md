@@ -5,7 +5,6 @@ TagAnalyzer is a JavaScript utility that analyzes HTML pages for specific tags a
 ## Features
 - Analyze specific HTML tags (e.g., `h1`, `h2`, etc.)
 - Count elements with specific class names
-- Fetch and analyze linked pages for additional tags
 - Display results in a customizable pop-up box
 
 ## Installation
@@ -18,16 +17,8 @@ npm install tag-analyzer
 
 ## Usage Example
 
-```html
-<script type="module">
-  import TagAnalyzer from './node_modules/tag-analyzer/TagAnalyzer.js';
+```javascript
+  import TagAnalyzer from './TagAnalyzer.js';
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const analyzer = new TagAnalyzer();
-
-    window.analyzer = analyzer;
-
-    // Example usage
-    analyzer.run(['h1', 'h2', 'h3'], ['header', 'arda']);
-  });
-</script>
+  window.analyzer = new TagAnalyzer();
+  window.analyzer.run(['h1', 'h2', '.yourclass', '#yourid']);
