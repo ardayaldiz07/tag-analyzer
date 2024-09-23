@@ -1,16 +1,15 @@
 # Using Example
 
+Add the following script to your HTML file:
 
-
-# Add this script to your html file.
+```html
 <script type="module">
-  ```javascript
   import TagAnalyzer from './TagAnalyzer.js';
 
   document.addEventListener("DOMContentLoaded", () => {
     const analyzer = new TagAnalyzer();
     
     // Example
-    analyzer.run(['h1', 'h2', 'h3'],["header","arda"]);
+    analyzer.run(['h1', 'h2', 'h3'], ["header", "arda"]);
   });
 </script>
