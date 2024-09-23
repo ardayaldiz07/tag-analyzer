@@ -18,7 +18,7 @@ class TagAnalyzer {
     });
   }
 
-  async analyzeLinks(tags) {
+  async analyzeLinks(tags,classes) {
     const links = document.querySelectorAll('a');
 
     for (let link of links) {
@@ -28,19 +28,29 @@ class TagAnalyzer {
         const response = await fetch(link.href);
         const text = await response.text();
 
+
+
         const parser = new DOMParser();
         const doc = parser.parseFromString(text, 'text/html');
         //cp
+
 
         tags.forEach(tag => {
           const count = doc.getElementsByTagName(tag).length;
           this.tagCounts[tag] += count;
         });
 
+        classes.forEach(className =>{
+          const count = doc.getElementsByClassName(className).length;
+          this.classCounts[className] += count;
+        })
+
       } catch (error) {
-        console.error(`Link ${link.href} analiz edilemedi:`, error);
+        console.error(`Link ${link.href} Access Denied:`, error);
       }
     }
+
+    
   }
 
   // Creating UI
@@ -104,12 +114,9 @@ class TagAnalyzer {
 
     this.analyzePageTags(tags);
     this.analyzeClassNames(classNames);
-
-    // For analyze links.
-    // await this.analyzeLinks(tags);
+    await this.analyzeLinks(tags,classNames);
 
     this.createUI();
   }
 }
-
 export default TagAnalyzer;
