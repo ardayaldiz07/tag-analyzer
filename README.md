@@ -22,4 +22,4 @@ npm install tag-analyzer
 
   
   window.analyzer = new TagAnalyzer();
-  window.analyzer.run(['h1', 'h2', 'h3'], ['header', 'arda']);
+  window.analyzer.run(['h1', 'h2', 'h3','.yourclass', '#yourid']);
