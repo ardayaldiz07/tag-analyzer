@@ -3,17 +3,25 @@
   "version": "1.0.2",
   "description": "Tag analyzer for your website",
   "main": "index.js",
+  "module": "index.js",
+  "homepage": "github.com/ardayaldiz07/tag-analyzer.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/ardayaldiz07/tag-analyzer"
+    "url": "git+https://github.com/ardayaldiz07/tag-analyzer.git"
   },
   "keywords": [
+    "github",
+    "repos",
+    "repositories",
     "tag",
-    "analyzer"
+    "class",
+    "id",
+    "analyzer",
+    "custom"
   ],
-  "author": "Arda Yaldız",
+  "author": "Arda Yaldız <ardayaldiz07@gmail.com>",
   "license": "ISC"
 }
