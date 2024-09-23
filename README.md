@@ -22,5 +22,4 @@ npm install tag-analyzer
   import TagAnalyzer from './TagAnalyzer.js';
 
   window.analyzer = new TagAnalyzer();
-  // Example usage
-  window.analyzer.run(['h1', 'h2', 'h3'], ['header', 'arda']);
+  window.analyzer.run(['h1', 'h2', '.yourclass', '#yourid']);
