@@ -1,3 +1,11 @@
+## Installation
+
+You can install TagAnalyzer using NPM:
+
+```bash
+npm install tag-analyzer
+
+
 # Using Example
 
 Add the following script to your HTML file:
