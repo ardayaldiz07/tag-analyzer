@@ -20,7 +20,7 @@ npm install tag-analyzer
 
 ```html
 <script type="module">
-  import TagAnalyzer from './TagAnalyzer.js';
+  import TagAnalyzer from './node_modules/tag-analyzer/TagAnalyzer.js';
 
   document.addEventListener("DOMContentLoaded", () => {
     const analyzer = new TagAnalyzer();
