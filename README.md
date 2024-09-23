@@ -24,7 +24,9 @@ npm install tag-analyzer
 
   document.addEventListener("DOMContentLoaded", () => {
     const analyzer = new TagAnalyzer();
-    
+
+    window.analyzer = analyzer;
+
     // Example usage
     analyzer.run(['h1', 'h2', 'h3'], ['header', 'arda']);
   });
