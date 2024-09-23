@@ -1,0 +1,19 @@
+{
+  "name": "tag-analyzer",
+  "version": "1.0.1",
+  "description": "Tag analyzer for your website",
+  "main": "TagAnalyzer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/ardayaldiz07/tag-analyzer"
+  },
+  "keywords": [
+    "tag",
+    "analyzer"
+  ],
+  "author": "Arda Yaldız",
+  "license": "ISC"
+}
