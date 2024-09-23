@@ -6,7 +6,7 @@ You can install TagAnalyzer using NPM:
 npm install tag-analyzer
 
 
-# Using Example
+## Using Example
 
 Add the following script to your HTML file:
 
