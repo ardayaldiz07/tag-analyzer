@@ -18,7 +18,9 @@ npm install tag-analyzer
 ## Usage Example
 
 ```javascript
-  import TagAnalyzer from './TagAnalyzer.js';
-
-  const analyzer = new TagAnalyzer();
-  analyzer.run(['h1', 'h2', 'h3','.yourclass', '#yourid']);
+  import TagAnalyzer from './src/TagAnalyzer.js'
+  const tag = new TagAnalyzer(
+  {
+      tags:['h1','h2','.yourclass','#yourid'],
+      useDefault:false,
+  });
