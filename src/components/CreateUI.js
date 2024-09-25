@@ -16,10 +16,10 @@ export default class CreateUI {
       border: '1px solid #ddd',
       padding: '20px',
       fontFamily: 'Arial, sans-serif',
-      boxShadow: '0 4px 16px rgba(0, 0, 0, 0.1)',
+      boxShadow: '0 4px 16px rgba(0, 0, 0, 0.5)',
       zIndex: '1000',
       transition: 'all 0.3s ease-in-out',
-      maxHeight: '90vh',
+      maxHeight: "calc(90vh - 50px)",
       overflowY: 'auto'
     });
     
@@ -42,14 +42,14 @@ export default class CreateUI {
   const mainDiv = document.createElement('div');
   Object.assign(mainDiv.style, {
     position: 'sticky',
-    top: '0', // 0 olarak ayarlandı
+    top: '-20px',
     backgroundColor: 'white',
-    zIndex: '1000', // Diğer içeriklerin üstünde görünmesi için
-    height: 'auto', // Otomatik yükseklik
-    padding: '5px 0', // Üstten ve alttan boşluk ekleyin
+    zIndex: '1000',
+    height: '60px',
+    padding: '5px 0', 
     display: 'flex',
-    justifyContent: 'space-between', // Flex düzenini düzeltin
-    alignItems: 'center', // İçeriği dikey olarak ortala
+    justifyContent: 'space-between',
+    alignItems: 'center',
   });
 
   // Add title and close button
@@ -59,14 +59,12 @@ export default class CreateUI {
 
     analyzerBox.appendChild(mainDiv);
 
-    // Separator
     const separator = document.createElement('hr');
     separator.style.border = 'none';
     separator.style.borderTop = '1px solid #eee';
     separator.style.margin = '10px 0';
     analyzerBox.appendChild(separator);
 
-    // Accordion for each tag
     for (const tag in this.tagCounts) {
       const accordion = new Accordion(tag, this.tagCounts[tag]);
       analyzerBox.appendChild(accordion.render());
