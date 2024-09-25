@@ -8,7 +8,7 @@ export default class CloseButton {
     closeButton.textContent = '×';
     Object.assign(closeButton.style, {
       position: 'absolute',
-      top: '0px',
+      top: '20px',
       right: '12px',
       backgroundColor: '#f44336',
       color: 'white',
